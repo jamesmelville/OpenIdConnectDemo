@@ -1,0 +1,29 @@
+<apex:page controller="OpenIdDemoController" >
+    <apex:form >
+        <apex:pageBlock >
+            <apex:pageBlockSection >
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Search: " for="srch" />
+                    <apex:inputText value="{!query}" id="srch" />
+                </apex:pageBlockSectionItem>
+            </apex:pageBlockSection>
+            <apex:pageblockTable value="{!GDriveList.items}" var="item">
+                <apex:column >
+                    <apex:facet name="header">Title</apex:facet> 
+                    <apex:outputLink value="{!item.alternateLink}" target="_blank"  >
+                        {!item.Title}
+                    </apex:outputLink>
+                </apex:column>
+                <apex:column >
+                    <apex:facet name="header">Thumbnail</apex:facet> 
+                    <apex:outputLink value="{!item.alternateLink}" target="_blank"  >
+                        <apex:image url="{!item.thumbnailLink}"/>
+                    </apex:outputLink>
+                </apex:column>
+            </apex:pageblockTable>
+        </apex:pageBlock>
+    </apex:form>
+    <br/>
+    <apex:outputText rendered="false">Token: {!authtoken}</apex:outputText>
+    <apex:outputText rendered="false">{!gDriveResponse}</apex:outputText>
+</apex:page>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>GDriveList</members>
+        <members>GoogleHandler</members>
+        <members>OpenIdDemoController</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>OpenIdDemo</members>
+        <name>ApexPage</name>
+    </types>
+    <types>
+        <members>Google</members>
+        <name>AuthProvider</name>
+    </types>
+    <types>
+        <members>Google_API</members>
+        <members>Google_Images0</members>
+        <members>Google_Images1</members>
+        <members>Google_Images2</members>
+        <members>Google_Images3</members>
+        <members>Google_Images4</members>
+        <members>Google_Images5</members>
+        <members>Google_Images6</members>
+        <members>Google_Images7</members>
+        <members>Google_Images8</members>
+        <members>Google_Images9</members>
+        <name>RemoteSiteSetting</name>
+    </types>
+    <version>29.0</version>
+</Package>
