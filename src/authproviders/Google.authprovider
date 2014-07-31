@@ -4,7 +4,7 @@
     <consumerKey>----CONSUMER KEY----</consumerKey>
     <consumerSecret>----CONSUMER SECRET----</consumerSecret>
     <defaultScopes>email openid profile https://www.googleapis.com/auth/drive</defaultScopes>
-    <executionUser>----LOCAL USERNAME----</executionUser>
+    <executionUser></executionUser>
     <friendlyName>Google Login</friendlyName>
     <providerType>OpenIdConnect</providerType>
     <registrationHandler>GoogleHandler</registrationHandler>
